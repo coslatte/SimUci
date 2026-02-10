@@ -8,7 +8,7 @@ version = "0.1.5"
 description = "ICU discrete-event simulation engine — distribution sampling, patient clustering, and statistical validation."
 readme = "README.md"
 license = { file = "LICENSE" }
-requires-python = ">=3.9, <=3.14"
+requires-python = ">=3.12, <=3.14"
 authors = [{ name = "SimUCI Team" }]
 keywords = ["icu", "simulation", "discrete-event", "simpy", "healthcare"]
 classifiers = [
@@ -16,9 +16,7 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
@@ -49,14 +47,14 @@ Repository = "https://github.com/coslatte/simuci"
 packages = ["src/simuci"]
 
 [tool.ruff]
-target-version = "py311"
+target-version = "py312"
 line-length = 120
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "B", "SIM"]
 
 [tool.mypy]
-python_version = "3.11"
+python_version = "3.12"
 strict = true
 warn_return_any = true
 warn_unused_configs = true
